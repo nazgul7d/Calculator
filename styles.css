@@ -1,0 +1,142 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('https://cdn.glitch.global/bca4dabe-80d5-4598-bcc7-f24e0130fc72/digital-7%20_mono.ttf?v=1662743526588');
+}
+
+/* COLOR SCHEME
+bg color: #121212 
+calculator color: #1f1f2b
+key color: #373a4b
+font color: #f8f8f2
+clear/backspace color: #bd93f9
+operator color: #ff79c6  #8be9fd  #f1fa8c #50fa7b
+*/
+
+body {
+    padding: 0;
+    color: #f8f8f2;
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: #088F8F;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 550px;
+    border-radius: 12px;
+    background-color: #383838;
+    box-shadow: #050507 10px 20px 20px 10px;
+}
+
+.calculator {
+    border-radius: 12px;
+    background-color: #131318;
+    padding: 20px 30px 10px;
+}
+
+.time {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.displayScreen{
+    border-radius: 2%;
+    background-color: #383838;
+    padding: 20px;
+    width: auto;
+    height: 100px;
+    font-family: 'digital-clock-font', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 37px;
+    box-shadow: #13131a 10px 10px 10px;
+}
+
+.currentDisplay{
+    display: flex;
+    line-height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3em;
+}
+
+/* .shrinkDisplay1{
+    font-size: 4.5em;
+}
+.shrinkDisplay2{
+    font-size: 4em;
+}
+.shrinkDisplay3{
+    font-size: 3em;
+} */
+
+.buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+
+.clear {
+    color: white;
+    height: 175px;
+    background-color: #FA5F55
+}
+
+.backspace {
+    color: white;
+    height: 175px;
+}
+
+.divide {
+    color: white;
+}
+
+.multiply {
+    color: white;
+}
+
+.subtract {
+    color: white;
+}
+
+.add {
+    color: white;
+}
+
+button {
+    background-color: #383838;
+    color: #f8f8f2;
+    font-size: 30px;
+    width: 76px;
+    height: 83px;
+    border: 0;
+    margin: 5px;
+    border-radius: 12px;
+    /* box-shadow: #1d1d25 10px 10px 10px; */
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+}
+
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
